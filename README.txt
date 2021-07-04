@@ -11,3 +11,5 @@ Como usar:
 Funcionalidades a implementar:
   - Ajuda 50:50
   - Troca de Pergunta
+  
+Enuncioado do problema: https://drive.google.com/file/d/1d-DCu937QM-M9j6B8gYBzpSlBnhyqV6P/view?usp=sharing
