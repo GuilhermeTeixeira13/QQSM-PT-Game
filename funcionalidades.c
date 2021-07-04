@@ -679,14 +679,14 @@ void tabela()
     printf("              ┎━━━━━━━━━━━━━━━┓━━━━━━━━━━━━━━┓  \n");
     printf("┎━━━━━━━━━━━━━┃     Nível     ┃    Quantia   ┃  \n");
     printf("┃  Questão 1  ┃     Fácil     ┃     100€     ┃  \n");
-    printf("┃  Questão 2  ┃     Fácil     ┃     100€     ┃  \n");
-    printf("┃ -Questão 3- ┃    -Fácil-    ┃    -100€-    ┃  \n");
-    printf("┃  Questão 4  ┃     Médio     ┃     100€     ┃  \n");
-    printf("┃  Questão 5  ┃     Médio     ┃     100€     ┃  \n");
-    printf("┃ -Questão 6- ┃    -Médio-    ┃    -100€-    ┃  \n");
-    printf("┃  Questão 7  ┃    Difícil    ┃     100€     ┃  \n");
-    printf("┃  Questão 8  ┃    Difícil    ┃     100€     ┃  \n");
-    printf("┃  Questão 9  ┃    Difícil    ┃     100€     ┃  \n");
+    printf("┃  Questão 2  ┃     Fácil     ┃     300€     ┃  \n");
+    printf("┃ -Questão 3- ┃    -Fácil-    ┃    -500€-    ┃  \n");
+    printf("┃  Questão 4  ┃     Médio     ┃     2000€    ┃  \n");
+    printf("┃  Questão 5  ┃     Médio     ┃     3500€    ┃  \n");
+    printf("┃ -Questão 6- ┃    -Médio-    ┃    -5000€-   ┃  \n");
+    printf("┃  Questão 7  ┃    Difícil    ┃     1000€    ┃  \n");
+    printf("┃  Questão 8  ┃    Difícil    ┃    15000€    ┃  \n");
+    printf("┃  Questão 9  ┃    Difícil    ┃    20000€    ┃  \n");
     printf("┖━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┚\n");
 }
 
