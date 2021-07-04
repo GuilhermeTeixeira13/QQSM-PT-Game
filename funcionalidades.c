@@ -31,7 +31,7 @@ void minuscula(char *original, char *final)
 }
 
 /*
- * Dado um nome, a função procura dentro do array pr todas as questões e respetivas 
+ *  Dado um nome, a função procura dentro do array pr todas as questões e respetivas 
  * informações que contenham esse nome e imprime-as
  */
 void indicePergunta(char *nome, PERGUNTAS *pr)
@@ -44,8 +44,7 @@ void indicePergunta(char *nome, PERGUNTAS *pr)
     while (i < N && strlen(pr[i].questao) > 0 && saida != 1)
     {
         char min0[strlen(pr[i].identificador)+1], min1[strlen(pr[i].questao)+1], min2[strlen(pr[i].respostaCerta)+1], min3[strlen(pr[i].respostaErrada1)+1], min4[strlen(pr[i].respostaErrada2)+1], min5[strlen(pr[i].respostaErrada3)+1], min6[strlen(pr[i].dificuldade)+1];
-        char decisao[12];
-        char *pos;
+        char decisao[12], *pos;
 
         /*   ↓ Transforma todas as questões e respetivo conjunto de infos em minúsculas (Case insensitive) ↓   */
         minuscula(pr[i].identificador, min0);
@@ -80,6 +79,7 @@ void indicePergunta(char *nome, PERGUNTAS *pr)
                 fgets(decisao, 257, stdin);
                 pos = strchr(decisao, '\n');
                 *pos = '\0';
+
                 if(strcmp(decisao, "q") == 0 || strcmp(decisao, "quit") == 0)
                     saida = 1;
                 else if(decisao[0] == '\0')
@@ -186,6 +186,7 @@ void mostraArray(PERGUNTAS *pr, int n)
             fgets(decisao, 257, stdin);
             pos = strchr(decisao, '\n');
             *pos = '\0';
+
             if(strcmp(decisao, "q") == 0 || strcmp(decisao, "quit") == 0)
                 saida = 1;
             else if(decisao[0] == '\0')
@@ -405,9 +406,7 @@ int indice(PERGUNTAS *pr)
     int i = 0;
 
     while (i < N && strlen(pr[i].questao) > 0)
-    {
         i++;
-    }
     
     if(i==N)
         ret = -1;
@@ -426,9 +425,7 @@ void adicionaPerguntaIO(PERGUNTAS *pr)
     {
         ind = indice(pr);
         if (ind == -1)
-        {
             printf(" ✘  Atenção! Não pode ter mais de 150 perguntas no total.\n");
-        }
         else
         {
             adicionaPergunta(criaPerguntaIO(), pr);
@@ -460,10 +457,8 @@ void gravaTXT(PERGUNTAS *pr, char *fnome)
     FILE *f = abreFicheiro(fnome, "w");
 
     for (int i = 0; i < N && strlen(pr[i].questao) > 0; i++) // percorre todas as posições do array até encontrar uma questão vazia
-    {
         // Imprime no ficheiro o que é pretendido (formatado)
         fprintf(f, "ID %s|QUESTÃO: %s|RESPOSTA CERTA: %s|RESPOSTAS ERRADAS: %s, %s, %s|DIFICULDADE: %s.\n", pr[i].identificador, pr[i].questao, pr[i].respostaCerta, pr[i].respostaErrada1, pr[i].respostaErrada2, pr[i].respostaErrada3, pr[i].dificuldade);
-    }
     fechaFicheiro(f, fnome);
 }
 
@@ -512,9 +507,7 @@ int removePergunta(char *identificador, PERGUNTAS *pr)
         pr[i] = per;
     }
     else
-    {
         ret = 1; // Não encontrou a pergunta
-    }
     return ret;
 }
 
@@ -535,10 +528,9 @@ void removePerguntaIO(PERGUNTAS *pr)
         if (removePergunta(pnome, pr) == 1) 
             printf(" ✘  Pergunta Inexistente.\n");
         else
-        {
             printf(" ✔ Pergunta relativa ao identificador %s removida com sucesso.\n", pnome);
-        }
         printf("\n-> Prima 1 para remover outra pergunta ou qualquer outro número para sair --> ");
+
         while (scanf("%d", &op) != 1)
         {
             limpaInput();
@@ -576,9 +568,7 @@ int indiceJOGADOR(JOGADOR *jrs)
     int i = 0;
 
     while (i < N && strlen(jrs[i].nome) > 0)
-    {
         i++;
-    }
     ret = i;
 
     return ret;
@@ -601,10 +591,9 @@ void gravaTXTJOGADOR(JOGADOR *jrs, char *fnome)
     FILE *f = abreFicheiro(fnome, "w");
 
     for (int i = 0; i < N && strlen(jrs[i].nome) > 0; i++) // percorre todas as posições do array até encontrar um jogador vazio
-    {
         // Imprime no ficheiro o que é pretendido (formatado)
         fprintf(f, "Nome: %s\nQuantia: %d\n\n", jrs[i].nome, jrs[i].quantia);
-    }
+
     fechaFicheiro(f, fnome);
 }
 
@@ -617,9 +606,7 @@ void leTXTJOGADOR(JOGADOR *jrs, char *fnome)
     /*             ↓  Lê o input formatado através da stream  ↓                       */
     /* Tudo o que estiver no lugar de %[^|], é guardado em jrs[i].nome e em jrs[i].quantia */
     while (fscanf(f, "Nome: %[^\n]\nQuantia: %d\n\n", jrs[i].nome, &jrs[i].quantia) == 2)
-    {
         i++; // percorre posições até que não consiga coletar tudo o que é desejado 
-    }
 
     fechaFicheiro(f, fnome);
 }

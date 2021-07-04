@@ -6,20 +6,21 @@
 
 int main()
 {
-    int formatoLeitura, gerirOuIniciar, gerirConcurso, escolha, quantia=0, d[3], m[3], f[3], LinhasPerguntas[9], i=0, suficientes=1, tamanhoNomeJogador;
+    int formatoLeitura, gerirOuiniciar, gerirConcurso, escolha, quantia=0, d[3], m[3], f[3], LinhasPerguntas[9], i=0, suficientes=1, tamanhoNomeJogador;
     int numPosPerguntaTXT, resp[4], numResposta, desistiu = 0, tam, garantido=0, valorPorCerta = 0, facilCont=0, medioCont=0, dificilCont=0, numPergunta;
     char palavraProcurada[257], nomeJogador[100], dif[20], respostaJogador[10], resposta[10];
     char *pos, ch;
 
-    PERGUNTAS p[N] = {}; // Array de perguntas
-    JOGADOR j[1000] = {}; // Array de jogadores (e respetivas quantias ganhas)
+    PERGUNTAS p[N] = {}; // Array de perguntas de tamanho N
+    JOGADOR j[1000] = {}; // Array de jogadores (e respetivas quantias ganhas) -> Neste caso 1000 jogadores
 
+    /*   ↓  Pergunta em que formato queremos que o ficheiro das perguntas seja lido  ↓   */
     linha();
-    printf("\t\t\t★  - QUEM QUER SER MILIONÁRIO - ★\n");
+    printf("\t\t\t★  - QUEM QUER SER MILIONÁRiO - ★\n");
     linha();
     printf("• Em que formato gostaria que as perguntas fossem lidas?\n\n");
     printf("↪  1. TEXTO\n");
-    printf("↪  2. BINÁRIO\n\n");
+    printf("↪  2. BiNÁRiO\n\n");
     printf("Opção -> ");
     do
     {
@@ -29,7 +30,7 @@ int main()
             printf(" ✘  Input inválido! Digite algo válido: ");
             continue;
         }
-        /*   ↓  Lê os ficheiros pretendidos na forma de texto ou binário  ↓   */
+        /*   ↓  Lê o ficheiro das perguntas na forma de texto ou binário  ↓   */
         switch (formatoLeitura)
         {
         case 1:
@@ -44,7 +45,7 @@ int main()
         }
     }while(formatoLeitura != 1 && formatoLeitura != 2);
 
-    do // Estará sempre a repetir até o user decidir sair do programa (OPÇÃOP 0 NO MENU PRINCIPAL)
+    do // Estará sempre a mostrar o menu principal até o user decidir sair do programa (OPÇÃOP 0 NO MENU PRiNCiPAL)
     {
         linha();
         printf("___________________________| ⇒  - MENU PRINCIPAL - ⇐  |_____________________________\n\n");
@@ -53,29 +54,31 @@ int main()
         printf("↪  2. INICIAR CONCURSO\n\n");
         printf("↪  0. SAIR\n\n");
         printf("Opção -> ");
+
         /*   ↓  Faz a verificação do input, só aceitanto 0, 1 ou 2  ↓   */
-        while(scanf("%d", &gerirOuIniciar) != 1)
+        while(scanf("%d", &gerirOuiniciar) != 1)
         {
             limpaInput();
-            printf(" ✘  Input inválido! Digite algo válido: ");
+            printf(" ✘  input inválido! Digite algo válido: ");
         }
-        while(gerirOuIniciar < 0 || gerirOuIniciar > 2)
+        while(gerirOuiniciar < 0 || gerirOuiniciar > 2)
         {
             limpaInput();
             printf(" ✘  Opção inválida! Digite algo válido: ");
-            while(scanf("%d", &gerirOuIniciar) != 1)
+            while(scanf("%d", &gerirOuiniciar) != 1)
             {
                 limpaInput();
                 printf(" ✘  Input inválido! Digite algo válido: ");
             }
         }
         linha();
-        /*   ↓  GERIR CONCURSO  ↓   */
-        if(gerirOuIniciar == 1) 
+
+        /*   ↓  GERiR CONCURSO  ↓   */
+        if(gerirOuiniciar == 1) 
         {
             do
             {
-                printf("___________________________| ⇒  - GERIR CONCURSO - ⇐  |_____________________________\n\n");
+                printf("___________________________| ⇒  - GERiR CONCURSO - ⇐  |_____________________________\n\n");
                 printf("• Escolha uma das opções disponíveis: \n\n");
                 printf("↪  1. LISTAR QUESTÕES\n");
                 printf("↪  2. PROCURAR QUESTÕES\n");
@@ -83,8 +86,9 @@ int main()
                 printf("↪  4. ELIMINAR QUESTÃO\n");
                 printf("↪  5. VOLTAR AO MENU PRINCIPAL\n\n");
                 printf("Opção -> ");
+
                 /*   ↓  Verifica input, só aceitanto 1, 2, 3, 4 ou 5  ↓   */
-                while(scanf("%d", &gerirConcurso) != 1)
+                while(scanf("%d", &gerirConcurso) != 1) // CAso o input seja uma letra
                 {
                     limpaInput();
                     printf(" ✘  Input inválido! Digite algo válido --> ");
@@ -99,6 +103,8 @@ int main()
                         printf(" ✘  Input inválido! Digite algo válido --> ");
                     }
                 } 
+
+                /*   ↓  Consoante a opção, executa determinada tarefa (switch)  ↓   */
                 switch (gerirConcurso)
                 {
                 case 1:
@@ -108,8 +114,8 @@ int main()
                         printf("__________________| ⇒  - GERIR CONCURSO / LISTAR QUESTÕES - ⇐  |___________________\n\n");
                         limpaInput();
 
-                        mostraArray(p, N); // Lista as questões
-                        escolha = repetirAcao(); // Pergunta ao user se quer repetir a ação
+                        mostraArray(p, N); // Lista as perguntas do array de perguntas de tamanho N
+                        escolha = repetirAcao(); // Pergunta ao user se quer repetir a ação ou se quer sair
                     } while (escolha == 1);
                     break;
                 case 2:
@@ -119,6 +125,7 @@ int main()
                         printf("__________________| ⇒  - GERIR CONCURSO / PROCURAR QUESTÕES - ⇐  |__________________\n\n");
                         limpaInput();
 
+                        /*   ↓  Pede uma palavra/frase e vai procurá-la no array de perguntas  ↓   */
                         printf("• Escreva uma palavra / frase e será remetido para a(s) pergunta(s) que a(s) contêm.\n");
                         printf("🔎 -> ");
                         fgets(palavraProcurada, 100, stdin);
@@ -127,17 +134,19 @@ int main()
 
                         printf("\n");
                         indicePergunta(palavraProcurada, p); // Mostra todas as perguntas que contêm a letra/palavra/frase pretendida
-                        escolha = repetirAcao(); // Pergunta ao user se quer repetir a ação
+                        escolha = repetirAcao(); // Pergunta ao user se quer repetir a ação ou se quer sair
                     } while (escolha == 1);
                     break;
                 case 3:
-                    facilCont=0, medioCont=0, dificilCont=0;
+                    facilCont = 0, medioCont = 0, dificilCont = 0;
+
                     linha();
                     printf("_________________| ⇒  - GERIR CONCURSO / ADICIONAR QUESTÕES - ⇐  |__________________\n\n");
                     printf("• Nesta secção pode criar novas questões, adicionando-as ao programa.\n");
                     printf("• Das 150 perguntas no total, deve haver 50 de cada dificuldade.\n\n");
                     printf("   Feita a contagem, relembramos que existem:\n");
-                    /*   ↓  Avisa o user sobre quantas perguntas de cada dificuldade já estão "registadas"  ↓   */
+
+                    /*   ↓  Avisa o user sobre quantas perguntas de cada dificuldade já estão "registadas" depois d efazer a contagem ↓   */
                     for(i=0; i<N && strlen(p[i].questao)>0; i++)
                     {
                         if(strcmp("facil", p[i].dificuldade) == 0)
@@ -147,6 +156,7 @@ int main()
                         if(strcmp("dificil", p[i].dificuldade) == 0)
                             dificilCont++;
                     }
+
                     printf("  ➙  %d FÁCEIS\n", facilCont);
                     printf("  ➙  %d MÉDIAS\n", medioCont);
                     printf("  ➙  %d DIFÍCEIS\n\n", dificilCont);
@@ -154,7 +164,8 @@ int main()
 
                     adicionaPerguntaIO(p); // Adiciona pergunta(s)
 
-                    gravaBin(p, "db.bin"); // Grava as alterações cometidas
+                    /*   ↓  Grava as alterações cometidas↓   */
+                    gravaBin(p, "db.bin"); 
                     gravaTXT(p, "db.txt");
                     break;
                 case 4:
@@ -164,9 +175,10 @@ int main()
                     printf("  PRIMEIRO NA LISTA (EM CASO DE DÚVIDA VERIFICAR OPÇÃO 1.LISTAR QUESTÕES).\n\n");
                     limpaInput();
 
-                    removePerguntaIO(p); // Remove pergunta(s)
+                    removePerguntaIO(p); // Remove pergunta(s) depois do user digitar o identificador da mesma 
 
-                    gravaBin(p, "db.bin"); // Grava as alterações cometidas
+                    /*   ↓  Grava as alterações cometidas↓   */
+                    gravaBin(p, "db.bin"); 
                     gravaTXT(p, "db.txt");
                 default:
                     break;
@@ -176,8 +188,9 @@ int main()
             }while(gerirConcurso != 5);
         }
 
-        /*   ↓  INICIAR CONCURSO  ↓   */
-        if(gerirOuIniciar == 2)
+
+        /*   ↓  iNiCiAR CONCURSO  ↓   */
+        if(gerirOuiniciar == 2)
         {
             i=0, desistiu = 0, numResposta=0, quantia = 0, facilCont=0, medioCont=0, dificilCont=0, suficientes = 0;
             
@@ -185,6 +198,8 @@ int main()
             limpaInput();
 
             printf("________________|  ⇒  - CONCURSO - QUEM QUER SER MILIONÁRIO - ⇐   |_________________\n\n\n");
+
+            /*   ↓  Pede o nome do jogador ↓   */
             printf("• NOME DO JOGADOR: ");
             fgets(nomeJogador, 257, stdin);
             pos = strchr(nomeJogador, '\n');
@@ -199,6 +214,7 @@ int main()
                 tamanhoNomeJogador = strlen(nomeJogador);
             }
 
+            /*   ↓ Mostra algumas infos importantes para que o user perceba o funcionamento do jogo ↓   */
             infos();
 
             /* Conta quantas questões de nível fácil/médio/difícil existem */
@@ -212,9 +228,10 @@ int main()
                     dificilCont++;
             }
 
-            if(facilCont >2  && medioCont > 2 && dificilCont > 2)
+            if(facilCont > 2  && medioCont > 2 && dificilCont > 2) // Só deixa começar o jogo se houver mais de 2 perguntas de cada categoria
             {    
                 suficientes = 1;
+
                 /* Sorteia as linhas do db.txt (dentro das perguntas possíveis existentes), q correspondem às perguntas que farão parte do concurso */
                 Randoms(facilCont, 1, f, 3); 
                 Randoms(facilCont+medioCont, facilCont+1, m, 3); 
@@ -262,12 +279,12 @@ int main()
                     }
                     printf("\n");
 
-                    /*   ↓  SUMÁRIO DO JOGO  ↓   */
+                    /*   ↓  SUMÁRiO DO JOGO  ↓   */
                     printf("➙  SALDO ATUAL: %d EUROS.\n", quantia-valorPorCerta);
                     printf("➙  SE ACERTAR FICARÁ COM: %d euros\n", quantia);
                     printf("➙  SE ERRAR/DESISTIR FICARÁ COM: %d euros\n\n", garantido);
 
-                    /*   ↓  TRANSFORMAÇÃO PARA MAIÚSCULA (ESTÉTICA)  ↓   */
+                    /*   ↓  TRANSFORMAÇÃO PARA MAiÚSCULA (ESTÉTiCA)  ↓   */
                     if(strcmp(p[numPosPerguntaTXT].dificuldade, "facil") == 0)
                         strcpy(dif, "FÁCIL");
                     if(strcmp(p[numPosPerguntaTXT].dificuldade, "medio") == 0)
@@ -282,6 +299,13 @@ int main()
 
 
                     /* A cada resposta possível (A,B,C,D) é atribuido cada número do array resp (constituido por 0, 1, 2, 3) */
+                    /*
+                        A - 1 (errada1)
+                        B - 3 (errada2)
+                        C - 0 (certa)
+                        D - 4 (errada3)
+                    
+                    */
                     for(int k=0; k<4; k++)
                     {
                         printf("%c. ", ch);
@@ -314,7 +338,8 @@ int main()
                             printf(" ✘ Opção inválida!!\n");
                     } while ((strcmp(respostaJogador, "a") != 0 && strcmp(respostaJogador, "b") != 0 && strcmp(respostaJogador, "c") != 0 && strcmp(respostaJogador, "d") != 0 && strcmp(respostaJogador, "x") != 0) || tam == 0);
 
-                    /*   ↓  VERIFICA-SE QUAL É O NÚMERO ASSOCIADO À LETRA RESPONDIDA E, CONSEQUENTEMENTE SE É OU NÃO A RESPOSTA CERTA  ↓   */
+                    /*   ↓  VERiFiCA-SE QUAL É O NÚMERO ASSOCiADO À LETRA RESPONDiDA E, CONSEQUENTEMENTE SE É OU NÃO A RESPOSTA CERTA  ↓   */
+                    // Se numResposta = 0, então o user deu a resposta certa!
                     if(strcmp(respostaJogador, "a") == 0)
                         numResposta = resp[0]; 
                     else if(strcmp(respostaJogador, "b") == 0)
@@ -334,7 +359,7 @@ int main()
             }
             printf("\n");
 
-            /*   ↓  Imprime mensangens consoante rumo do jogo  ↓   */
+            /*   ↓  imprime mensangens consoante rumo do jogo  ↓   */
             if(desistiu == 1)
             {
                 quantia = garantido;
@@ -358,10 +383,12 @@ int main()
             adicionaJogadorIO(j, nomeJogador, quantia);
             gravaTXTJOGADOR(j, "resultados.txt");
         }
-    }while(gerirOuIniciar != 0);
+    }while(gerirOuiniciar != 0);
+
     printf("*\t\t\t     Trabalho elaborado por:\t\t\t\t   *\n");
     printf("\t        Guilherme Teixeira (45667) e Marco Bernardes (45703)\n");
     printf("\t     ENGENHARIA INFORMÁTICA - PROGRAMAÇÃO - 1ºANO - 2020/2021\n");
     linha();
+
     return 0;
 }
