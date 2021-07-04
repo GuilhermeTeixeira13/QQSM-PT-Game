@@ -1,0 +1,150 @@
+ID F1|QUESTÃO: Na série "Silicon Valley" da emissora HBO como se chama a empresa que tem Richard Hendricks como CEO?|RESPOSTA CERTA: Pied Piper|RESPOSTAS ERRADAS: Hooli, Sliceline, RussFest|DIFICULDADE: facil.
+ID F2|QUESTÃO: Qual é o país cuja bandeira contém apenas um círculo vermelho no centro de um fundo branco?|RESPOSTA CERTA: Japão|RESPOSTAS ERRADAS: China, Coreia do Norte, Índia|DIFICULDADE: facil.
+ID F3|QUESTÃO: Em que cidade portuguesa se situa o Palácio do Gelo?|RESPOSTA CERTA: Viseu|RESPOSTAS ERRADAS: Aveiro, Lisboa, Coimbra|DIFICULDADE: facil.
+ID F4|QUESTÃO: Qual é a segunda maior cidade de Portugal (habitantes)?|RESPOSTA CERTA: Vila Nova de Gaia|RESPOSTAS ERRADAS: Porto, Lisboa, Braga|DIFICULDADE: facil.
+ID F5|QUESTÃO: Quantos olhos a maior parte das aranhas têm?|RESPOSTA CERTA: Quatro pares|RESPOSTAS ERRADAS: Quatro, Dois, Doze|DIFICULDADE: facil.
+ID F6|QUESTÃO: Qual das alternativas contém apenas nomes de rios?|RESPOSTA CERTA: Nilo/Amazonas/Mississipi|RESPOSTAS ERRADAS: São Francisco/Douro/Antártico, Danúbio/Jordão/Morto, Cáspio/Vermelho/Atlântico|DIFICULDADE: facil.
+ID F7|QUESTÃO: Em que ano aconteceu o terremoto de Lisboa?|RESPOSTA CERTA: 1755|RESPOSTAS ERRADAS: 1776, 1855, 1801|DIFICULDADE: facil.
+ID F8|QUESTÃO: Qual é a religião predominante em Portugal?|RESPOSTA CERTA: Catolicismo|RESPOSTAS ERRADAS: Budismo, Ateísmo, Judaísmo|DIFICULDADE: facil.
+ID F9|QUESTÃO: Como eram chamados os árabes em Portugal?|RESPOSTA CERTA: Mouros|RESPOSTAS ERRADAS: Terroristas, Romanos, Ciganos|DIFICULDADE: facil.
+ID F10|QUESTÃO: Qual é a 2ª língua oficial de Portugal?|RESPOSTA CERTA: Mirândes|RESPOSTAS ERRADAS: Inglês, Francês, Espanhol|DIFICULDADE: facil.
+ID F11|QUESTÃO: Qual é a ciência que estuda a atmosfera da Terra e a Climatologia?|RESPOSTA CERTA: Meteorologia|RESPOSTAS ERRADAS: Metereologia, Astronomia, Horologia|DIFICULDADE: facil.
+ID F12|QUESTÃO: Quantos Braços tem um polvo?|RESPOSTA CERTA: Oito|RESPOSTAS ERRADAS: Dez, Quatro, Cinco|DIFICULDADE: facil.
+ID F13|QUESTÃO: Em que continente está situado Portugal?|RESPOSTA CERTA: Europa|RESPOSTAS ERRADAS: Ásia, América do Sul, América do Norte|DIFICULDADE: facil.
+ID F14|QUESTÃO: Qual é a capital de Portugal?|RESPOSTA CERTA: Lisboa|RESPOSTAS ERRADAS: Porto, Braga, Praga|DIFICULDADE: facil.
+ID F15|QUESTÃO: Quais são as regiões autónomas de Portugal?|RESPOSTA CERTA: Madeira e Açores|RESPOSTAS ERRADAS: Angola e Moçambique, Goa e Macau, Porto e Lisboa|DIFICULDADE: facil.
+ID F16|QUESTÃO: Portugal está dividido em quantos distritos?|RESPOSTA CERTA: 18|RESPOSTAS ERRADAS: 22, 20, 10|DIFICULDADE: facil.
+ID F17|QUESTÃO: Em qual destes pares estão apenas animais mamíferos?|RESPOSTA CERTA: Baleia e Golfinho|RESPOSTAS ERRADAS: Morcego e Galinha, Porcos e Pinguins, Girafas e Tartarugas|DIFICULDADE: facil.
+ID F18|QUESTÃO: Qual das seguintes aves não voa?|RESPOSTA CERTA: Pinguim|RESPOSTAS ERRADAS: Galinha, Peru, Cegonha|DIFICULDADE: facil.
+ID F19|QUESTÃO: Portugal faz fronteira com qual país?|RESPOSTA CERTA: Espanha|RESPOSTAS ERRADAS: França, Marrocos, Itália|DIFICULDADE: facil.
+ID F20|QUESTÃO: Austrália faz fronteira com que país?|RESPOSTA CERTA: Nenhuma das opções.|RESPOSTAS ERRADAS: Brasil, China, Nova Zelândia|DIFICULDADE: facil.
+ID F21|QUESTÃO: Qual é o estilo de música típico de Portugal?|RESPOSTA CERTA: Fado|RESPOSTAS ERRADAS: Ópera, Pop, Jazz|DIFICULDADE: facil.
+ID F22|QUESTÃO: Qual é o nome masculino mais registado em Portugal?|RESPOSTA CERTA: João|RESPOSTAS ERRADAS: Afonso, Tomás, Óscar|DIFICULDADE: facil.
+ID F23|QUESTÃO: Qual é o significado da expressão "calcanhar de Aquiles"?|RESPOSTA CERTA: O ponto mais vulnerável de alguém|RESPOSTAS ERRADAS: A característica predominante em cada pessoa, Algo muito engraçado, Fuga dos problemas|DIFICULDADE: facil.
+ID F24|QUESTÃO: Qual das seguintes alternativas é um exemplo de palíndromo?|RESPOSTA CERTA: Roma é amor|RESPOSTAS ERRADAS: O rato roeu a roupa do rei de Roma, Quem tem boca vai a Roma, O que é, o que é, que foi feito para andar e não anda?|DIFICULDADE: facil.
+ID F25|QUESTÃO: Os portugueses também são chamados de...|RESPOSTA CERTA: Lusitanos|RESPOSTAS ERRADAS: Heróis do Mar, CR7, Cubanos|DIFICULDADE: facil.
+ID F26|QUESTÃO: Quem foi o Presidente da República entre 1996 e 2006?|RESPOSTA CERTA: Jorge Sampaio|RESPOSTAS ERRADAS: Cavaco Silva, Mário Soares, Marcelo Rebelo de Sousa|DIFICULDADE: facil.
+ID F27|QUESTÃO: Que países estiverão presentes na final do Euro 2016?|RESPOSTA CERTA: Portugal e França|RESPOSTAS ERRADAS: Portugal e Bélgica, França e Brasil, França e Espanha|DIFICULDADE: facil.
+ID F28|QUESTÃO: Onde nasceu Cristiano Ronaldo?|RESPOSTA CERTA: Madeira|RESPOSTAS ERRADAS: Açores, Aveiro, Lisboa|DIFICULDADE: facil.
+ID F29|QUESTÃO: Listras azuis e brancas intercaladas e um sol no canto superior esquerdo caracterizam a bandeira de qual país da América do Sul?|RESPOSTA CERTA: Uruguai|RESPOSTAS ERRADAS: Argentina, Brasil, Japão|DIFICULDADE: facil.
+ID F30|QUESTÃO: As cantigas de Escárnio e Maldizer pertencem a qual escola literária?|RESPOSTA CERTA: Trovadorismo|RESPOSTAS ERRADAS: Classicismo, Barroco, Modernismo|DIFICULDADE: facil.
+ID F31|QUESTÃO: Qual foi o clube de Criastiano Ronaldo entre 2003 e 2009?|RESPOSTA CERTA: Manchester United|RESPOSTAS ERRADAS: Real Madrid, Sporting, Juventus|DIFICULDADE: facil.
+ID F32|QUESTÃO: Quantos dias demora a Terra a orbitar o sol?|RESPOSTA CERTA: 365|RESPOSTAS ERRADAS: 182, 28, 1001|DIFICULDADE: facil.
+ID F33|QUESTÃO: Qual o rio mais longo do mundo?|RESPOSTA CERTA: Nilo|RESPOSTAS ERRADAS: Mississipi, Douro, Guadiana|DIFICULDADE: facil.
+ID F34|QUESTÃO: De que cidade são os Beatles?|RESPOSTA CERTA: Liverpool|RESPOSTAS ERRADAS: Manchester, Londres, Kiev|DIFICULDADE: facil.
+ID F35|QUESTÃO: Quantos dias, aproximadamente, é que a lua demora a dar uma volta à terra?|RESPOSTA CERTA: 28|RESPOSTAS ERRADAS: 365, 366, 64|DIFICULDADE: facil.
+ID F36|QUESTÃO: Qual é a unidade que mede a intensidade do som?|RESPOSTA CERTA: Decibel|RESPOSTAS ERRADAS: Frequência, Ruído, Hertz|DIFICULDADE: facil.
+ID F37|QUESTÃO: Onde foram realizados os primeiros jogos Olímpicos Modernos?|RESPOSTA CERTA: Atenas|RESPOSTAS ERRADAS: Tóquio, Pequim, Lisboa|DIFICULDADE: facil.
+ID F38|QUESTÃO: Qual foi o primeiro filme da Disney?|RESPOSTA CERTA: Branca de Neve|RESPOSTAS ERRADAS: Shrek, Cinderella, Rapunzel|DIFICULDADE: facil.
+ID F39|QUESTÃO: Em que ano saiu o filme "Titanic"?|RESPOSTA CERTA: 1997|RESPOSTAS ERRADAS: 1998, 2000, 1985|DIFICULDADE: facil.
+ID F40|QUESTÃO: Quantas cores tem o arco-íris?|RESPOSTA CERTA: 7|RESPOSTAS ERRADAS: 6, 4, 10|DIFICULDADE: facil.
+ID F41|QUESTÃO: Qua país foi dividido em 1949?|RESPOSTA CERTA: Alemanha|RESPOSTAS ERRADAS: Dinamarca, Rússia, Brasil|DIFICULDADE: facil.
+ID F42|QUESTÃO: Qual era o deus romano do amor?|RESPOSTA CERTA: Cupido|RESPOSTAS ERRADAS: Baco, Apolo, Eros|DIFICULDADE: facil.
+ID F43|QUESTÃO: Qual o nome do soldado português que ofereceu grande resistência à chegada do povo Romano à Península Ibérica?|RESPOSTA CERTA: Viriato|RESPOSTAS ERRADAS: Sertório, D.Afonso III, Miguel I|DIFICULDADE: facil.
+ID F44|QUESTÃO: Que Rei tinha por cognome "O Lavrador"?|RESPOSTA CERTA: D.Dinis|RESPOSTAS ERRADAS: D.Afonso Henriques, D.Pedro IV, D.Maria III|DIFICULDADE: facil.
+ID F45|QUESTÃO: Quam foi o grande impulsionador dos descobrimentos portugueses?|RESPOSTA CERTA: Infante D.Henrique|RESPOSTAS ERRADAS: D.Sebastião, D.Afonso Henriques, D.Pedro IV|DIFICULDADE: facil.
+ID F46|QUESTÃO: Em que ano ocorreu o atentado terrorista às Torres Gémeas (World Trade Center)?|RESPOSTA CERTA: 2001|RESPOSTAS ERRADAS: 2003, 2000, 2011|DIFICULDADE: facil.
+ID F47|QUESTÃO: Quantos minutos há em 3horas?|RESPOSTA CERTA: 180|RESPOSTAS ERRADAS: 120, 80, 200|DIFICULDADE: facil.
+ID F48|QUESTÃO: Que planeta é conhecido por formar anéis à sua volta?|RESPOSTA CERTA: Saturno|RESPOSTAS ERRADAS: Júpiter, Neptuno, Terra|DIFICULDADE: facil.
+ID F49|QUESTÃO: Quantos anos há em 2.5 séculos?|RESPOSTA CERTA: 250|RESPOSTAS ERRADAS: 220, 25, 2500|DIFICULDADE: facil.
+ID F50|QUESTÃO: Em que lugar vivem mais cangurus que pessoas?|RESPOSTA CERTA: Austrália|RESPOSTAS ERRADAS: Nova Zelândia, África do Sul, Portugal|DIFICULDADE: facil.
+ID M1|QUESTÃO: Quantas casas decimais tem o número PI?|RESPOSTA CERTA: Infinitas|RESPOSTAS ERRADAS: Milhares, Três, Centenas|DIFICULDADE: medio.
+ID M2|QUESTÃO: O que é que a palavra legend significa em português?|RESPOSTA CERTA: Lenda|RESPOSTAS ERRADAS: Legenda, Conto, Legendário|DIFICULDADE: medio.
+ID M3|QUESTÃO: Quantos jogadores tem uma equipa de futebol?|RESPOSTA CERTA: 11|RESPOSTAS ERRADAS: 13, 9, 10|DIFICULDADE: medio.
+ID M4|QUESTÃO: Em que local da Ásia o português é língua oficial?|RESPOSTA CERTA: Macau|RESPOSTAS ERRADAS: Filipinas, Coreia do Sul, Moçambique|DIFICULDADE: medio.
+ID M5|QUESTÃO: Qual é a conjunção do verbo caber na 1ª pessoa do singular do presente do indicativo?|RESPOSTA CERTA: Eu caibo|RESPOSTAS ERRADAS: Eu cabo, Que eu caiba, Nenhuma das alternativas|DIFICULDADE: medio.
+ID M6|QUESTÃO: Qual é capital da Alemanha?|RESPOSTA CERTA: Berlim|RESPOSTAS ERRADAS: Frankfurt, Munique, Moscovo|DIFICULDADE: medio.
+ID M7|QUESTÃO: Qual é a capital do Brasil?|RESPOSTA CERTA: Brasília|RESPOSTAS ERRADAS: Rio de Janeiro, São Paulo, São Francisco|DIFICULDADE: medio.
+ID M8|QUESTÃO: Qual foi a batalha mais mortal da Segunda Guerra Mundial?|RESPOSTA CERTA: Estalinegrado|RESPOSTAS ERRADAS: Moscovo, La Lys, Berlim|DIFICULDADE: medio.
+ID M9|QUESTÃO: O ferro é essencial para o corpo humano porque...|RESPOSTA CERTA: Fixa o oxigénio|RESPOSTAS ERRADAS: Ajuda a digestão, Dá resistência aos ossos, Ajuda no bom funcionamento do sistema digestivo|DIFICULDADE: medio.
+ID M10|QUESTÃO: Qual destes países é transcontinental?|RESPOSTA CERTA: Rússia|RESPOSTAS ERRADAS: Istambul, Filipinas, Canadá|DIFICULDADE: medio.
+ID M11|QUESTÃO: Qual foi o recurso utilizado inicialmente pelo homem para explicar a origem das coisas?|RESPOSTA CERTA: A Mitologia|RESPOSTAS ERRADAS: A Astronomia, A Filosofia, A MAtemática|DIFICULDADE: medio.
+ID M12|QUESTÃO: Onde nasceu a Rainha D.Maria II?|RESPOSTA CERTA: Brasil|RESPOSTAS ERRADAS: Portugal, França, Moçambique|DIFICULDADE: medio.
+ID M13|QUESTÃO: Que nome se dá ao instante em que o sol cruza o equador celeste?|RESPOSTA CERTA: Equinócio|RESPOSTAS ERRADAS: Solstício, Meridiano, Nenhuma das opções|DIFICULDADE: medio.
+ID M14|QUESTÃO: Qual é o apelido da personagem Chandler na série "Friends"?|RESPOSTA CERTA: Bing|RESPOSTAS ERRADAS: Bern, Green, Grim|DIFICULDADE: medio.
+ID M15|QUESTÃO: Qual é o clube de futebol que venceu mais vezes a Primeira Liga?|RESPOSTA CERTA: Benfica|RESPOSTAS ERRADAS: Porto, Sporting, Vitória de Guimarães|DIFICULDADE: medio.
+ID M16|QUESTÃO: Qual é o maior animal terrestre?|RESPOSTA CERTA: Elefante africano|RESPOSTAS ERRADAS: Dinossauro, Baleia Azul, Girafa|DIFICULDADE: medio.
+ID M17|QUESTÃO: Qual o tema do famoso discurso "Eu Tenho um Sonho", de MArtin Luther King?|RESPOSTA CERTA: Igualdade de raças|RESPOSTAS ERRADAS: Justiça para com os menos favorecidos, Intolerância Religiosa, Guerra contra a China|DIFICULDADE: medio.
+ID M18|QUESTÃO: Quem foi o escrito português que escreveu o livro "O Homem Duplicado"|RESPOSTA CERTA: José Saramago|RESPOSTAS ERRADAS: António Salazar, Eugénio de Andrade, Cesário Verde|DIFICULDADE: medio.
+ID M19|QUESTÃO: De onde é originária a expressão "Salvo pela campainha"?|RESPOSTA CERTA: Inglaterra|RESPOSTAS ERRADAS: França, Brasil, Espanha|DIFICULDADE: medio.
+ID M20|QUESTÃO: Quem co-criou, com Dennies Ritchie, em 1969, o sistema UNIX?|RESPOSTA CERTA: Ken Thompson|RESPOSTAS ERRADAS: Bill Gates, Steve Wozniak, Niklaus Wirth|DIFICULDADE: medio.
+ID M21|QUESTÃO: Que ciclista (BTT) foi Campeão Mundial em 2016?|RESPOSTA CERTA: Tiago Ferreira|RESPOSTAS ERRADAS: David Rosa, Roberto Ferreira, Rui Oliveira|DIFICULDADE: medio.
+ID M22|QUESTÃO: Quais eram os principais heterônimos de Fernando Pessoa?|RESPOSTA CERTA: Alberto Caeiro, Ricardo Reis e Álvaro de Campos|RESPOSTAS ERRADAS: Ariano Suassuna, Raul Bopp e Quincas Borba, Alberto Caeiro, Ricardo Leite e Augusto Campos, Bento Teixeira / José Rodrigues dos Santos e Manuela Moura Guedes|DIFICULDADE: medio.
+ID M23|QUESTÃO: Qual foi o primeiro homem a pisar a Lua? E em que ano isso aconteceu?|RESPOSTA CERTA: Neil Amstrong - 1969|RESPOSTAS ERRADAS: Yuri Gagarin - 1961, Nicolas Tesla - 1969, Charles Conrad - 1968|DIFICULDADE: medio.
+ID M24|QUESTÃO: Que cantor norte-americano decidiu candidatar-se à presidência americana, em 2020?|RESPOSTA CERTA: Kanye West|RESPOSTAS ERRADAS: Justin Bieber, Elon Musk, Drake|DIFICULDADE: medio.
+ID M25|QUESTÃO: Qual é a capital da China|RESPOSTA CERTA: Pequim|RESPOSTAS ERRADAS: Xangai, Nova Deli, Tóquio|DIFICULDADE: medio.
+ID M26|QUESTÃO: Qual é a capital de Espanha?|RESPOSTA CERTA: Madrid|RESPOSTAS ERRADAS: Barcelona, Málaga, Bilbau|DIFICULDADE: medio.
+ID M27|QUESTÃO: Qual é a capital Canadá?|RESPOSTA CERTA: Ottawa|RESPOSTAS ERRADAS: Toronto, Califórnia, Ontário|DIFICULDADE: medio.
+ID M28|QUESTÃO: Qual o tipo sanguíneo considerado dador universal?|RESPOSTA CERTA: Tipo O|RESPOSTAS ERRADAS: Tipo A, Tipo AB, Tipo U|DIFICULDADE: medio.
+ID M29|QUESTÃO: No exterior de que famoso edifício francês foi construída uma enorme pirâmide de vidro em 1989?|RESPOSTA CERTA: Museu do Louvre|RESPOSTAS ERRADAS: Torre Eiffel, Arco do Triunfo, Grand Palais|DIFICULDADE: medio.
+ID M30|QUESTÃO: No final da série "Silicon Valley" da emissora HBO, qual dos seguintes personagens teve um destino incerto?|RESPOSTA CERTA: Erlich Bachman|RESPOSTAS ERRADAS: Gilfoyle, Richard Hendricks, Gavin Belson|DIFICULDADE: medio.
+ID M31|QUESTÃO: Na série de desenhos animados Pokemon, em que animal o primeiro pokemon de Ash Ketchum foi inspirado?|RESPOSTA CERTA: um Esquilo|RESPOSTAS ERRADAS: um Rato, uma Águia, uma Abelha|DIFICULDADE: medio.
+ID M32|QUESTÃO: Série de TV e cinema onde o personagem principal é um repórter fotográfico que trabalha para um dos dos Jornais mais importantes de sua cidade?|RESPOSTA CERTA: Homem Aranha|RESPOSTAS ERRADAS: Brooklyn 99, Super Homem, CSI - Investigação Criminal|DIFICULDADE: medio.
+ID M33|QUESTÃO: Qual das seguintes franquias tem um serviço de streaming próprio?|RESPOSTA CERTA: Marvel|RESPOSTAS ERRADAS: DC, NBC, CBS|DIFICULDADE: medio.
+ID M34|QUESTÃO: Qual destas Linguagens não é considerada uma linguagem de programação?|RESPOSTA CERTA: HTML|RESPOSTAS ERRADAS: Python, JavaScript, Pascal|DIFICULDADE: medio.
+ID M35|QUESTÃO: Como se chama a primeira longa-metragem da Pixar?|RESPOSTA CERTA: Toy Story|RESPOSTAS ERRADAS: Ratatui, For The Birds, Monsters Inc.|DIFICULDADE: medio.
+ID M36|QUESTÃO: Em que ano foi fundada a empresa de streaming Netflix?|RESPOSTA CERTA: 1997|RESPOSTAS ERRADAS: 2005, 2010, 2007|DIFICULDADE: medio.
+ID M37|QUESTÃO: Que equipa de futebol é conhecida como ‘The Red Devils’?|RESPOSTA CERTA: Manchester United|RESPOSTAS ERRADAS: Benfica, Arsenal, Liverpool|DIFICULDADE: medio.
+ID M38|QUESTÃO: Que piloto de Fórmula 1 ganhou mais campeonatos?|RESPOSTA CERTA: Michael Schumacher|RESPOSTAS ERRADAS: Graham Hill, Niki Lauda, Neil Armstrong|DIFICULDADE: medio.
+ID M39|QUESTÃO: Qual destas musicas não é da autoria do grupo musical QUEEN?|RESPOSTA CERTA: livin' on a prayer|RESPOSTAS ERRADAS: Bohemian Rhapsody, The Show Must Go On, Keep Yourself Alive|DIFICULDADE: medio.
+ID M40|QUESTÃO: Em que estado norte americano nasceu o cantor Elvis Presley?|RESPOSTA CERTA: Mississipi|RESPOSTAS ERRADAS: Tennessee, Nevada, Não sei porque ainda não tinha nascido|DIFICULDADE: medio.
+ID M41|QUESTÃO: Qual destes cantoras/es tem raízes portuguesas?|RESPOSTA CERTA: Shawn Mendes|RESPOSTAS ERRADAS: Camila Mendes, Justin Bieber, Ivete Sangalo|DIFICULDADE: medio.
+ID M42|QUESTÃO: Quantas teclas tem um piano clássico?|RESPOSTA CERTA: 88|RESPOSTAS ERRADAS: 97, 90, 70|DIFICULDADE: medio.
+ID M43|QUESTÃO: Que famosa banda pop americana era originalmente chamada de ‘Kara’s Flowers’?|RESPOSTA CERTA: Maroon 5|RESPOSTAS ERRADAS: One Direction, Imagine Dragons, Linkin Park|DIFICULDADE: medio.
+ID M44|QUESTÃO: Qual destas opções não é um sistema operativo?|RESPOSTA CERTA: Linux Ment|RESPOSTAS ERRADAS: Android, Windows, Kali Linux|DIFICULDADE: medio.
+ID M45|QUESTÃO: Qual destes personagens não faz parte do famoso Sexteto Sinistro Original do universo Marvel?|RESPOSTA CERTA: Mistério|RESPOSTAS ERRADAS: Abutre, Electro, Doctor Octopus|DIFICULDADE: medio.
+ID M46|QUESTÃO: Qual foi a duração do primeiro vídeo do Youtube?|RESPOSTA CERTA: 18 seg |RESPOSTAS ERRADAS: 1 min , 2 min , 30 seg |DIFICULDADE: medio.
+ID M47|QUESTÃO: O que significa a sigla “www” na internet?|RESPOSTA CERTA: World Wide Web |RESPOSTAS ERRADAS: Web World Wide , Web Wide World , Web |DIFICULDADE: medio.
+ID M48|QUESTÃO: Qual foi a primeira rede social da história da internet?|RESPOSTA CERTA: Classmate |RESPOSTAS ERRADAS: Facebook , MySpace , Orkut |DIFICULDADE: medio.
+ID M49|QUESTÃO: Quando foi criado o primeiro smartphone da história?|RESPOSTA CERTA: 1994 |RESPOSTAS ERRADAS: 2000 , 1998 , 2001 |DIFICULDADE: medio.
+ID M50|QUESTÃO: Quantos bits cabem em um byte?|RESPOSTA CERTA: 8 bits |RESPOSTAS ERRADAS: 4 bits , 12 bits , 16 bits |DIFICULDADE: medio.
+ID D1|QUESTÃO: Qual é a esperança média de vida de uma libélula?|RESPOSTA CERTA: 24h|RESPOSTAS ERRADAS: 3 dias, 1 semana, 3 semanas|DIFICULDADE: dificil.
+ID D2|QUESTÃO: Qual é o nome da maior empresa de tecnologia da Coréia do Sul?|RESPOSTA CERTA: Samsung|RESPOSTAS ERRADAS: Apple, LG, Xiaomi|DIFICULDADE: dificil.
+ID D3|QUESTÃO: Que eletrodoméstico foi criado por Murray Spangler em 1907 e que ainda hoje é vendido praticamente inalterado?|RESPOSTA CERTA: Aspirador|RESPOSTAS ERRADAS: Micro-ondas, Torradeira, Esquentador|DIFICULDADE: dificil.
+ID D4|QUESTÃO: Que modalidade desportiva foi introduzida em Portugal Continental em 1888 por Guilherme Pinto Basto?|RESPOSTA CERTA: Futebol|RESPOSTAS ERRADAS: Andebol, Basket, Ténis|DIFICULDADE: dificil.
+ID D5|QUESTÃO: Quem foi o 10º Rei de Portugal?|RESPOSTA CERTA: D.João I|RESPOSTAS ERRADAS: D.Fernando, D.Sancho I, D.Sancho II|DIFICULDADE: dificil.
+ID D6|QUESTÃO: Destas obras, qual não é da autoria de Stravinsky?|RESPOSTA CERTA: Louise|RESPOSTAS ERRADAS: Petrouchka, Pássaro de Fago, A Sagração da Primavera|DIFICULDADE: dificil.
+ID D7|QUESTÃO: Quem venceu o Mundial 2010 na África do Sul?|RESPOSTA CERTA: Espanha|RESPOSTAS ERRADAS: Alemanha, Portugal, Argentina|DIFICULDADE: dificil.
+ID D8|QUESTÃO: Quantos corações tem um polvo?|RESPOSTA CERTA: 3|RESPOSTAS ERRADAS: 1, 0, 2|DIFICULDADE: dificil.
+ID D9|QUESTÃO: Que país sul-americano é o maior produtor de vinho?|RESPOSTA CERTA: Argentina|RESPOSTAS ERRADAS: Brasil, Chile, Venezuela|DIFICULDADE: dificil.
+ID D10|QUESTÃO: Que corpo militar de elite foi criado em França por Luís XIII como guarda pessoal no século XVII existiu até 1815?|RESPOSTA CERTA: Mosqueteiros|RESPOSTAS ERRADAS: Escuteiros, Rangers, Guarda Suíça|DIFICULDADE: dificil.
+ID D11|QUESTÃO: Qual o nome da empresa fundada por Elon Musk, conhecida pelos seus carros elétricos?|RESPOSTA CERTA: Tesla|RESPOSTAS ERRADAS: Hyundai, Space X, Solar Cars|DIFICULDADE: dificil.
+ID D12|QUESTÃO: Em que ano nasceu Bill Gates?|RESPOSTA CERTA: 1955|RESPOSTAS ERRADAS: 1971, 1940, 1949|DIFICULDADE: dificil.
+ID D13|QUESTÃO: Qual é, aproximadamente, a temperatura média da superfície de Vénus?|RESPOSTA CERTA: 460ºC|RESPOSTAS ERRADAS: 0ºC, 250ºC, -70ºC|DIFICULDADE: dificil.
+ID D14|QUESTÃO: Quantos anos seriam necessários para viajar da Terra até Plutão, numa nave-espacial|RESPOSTA CERTA: 9 anos|RESPOSTAS ERRADAS: 1 ano, 75 anos, 8 meses|DIFICULDADE: dificil.
+ID D15|QUESTÃO: Quantas medalhas olímpicas o nadador Michael Phelps conquistou em sua carreira?|RESPOSTA CERTA: 28|RESPOSTAS ERRADAS: 26, 18, 67|DIFICULDADE: dificil.
+ID D16|QUESTÃO: Como se chamava a estação espacial russa desativada em 2001 e lançada no Oceano Pacífico?|RESPOSTA CERTA: Mir|RESPOSTAS ERRADAS: Apollo, Sona, Glasnost|DIFICULDADE: dificil.
+ID D17|QUESTÃO: Qual é a pessoa mais rica do mundo na atualidade?|RESPOSTA CERTA: Jeff Bezos|RESPOSTAS ERRADAS: Bill Gates, Steve Ballmer, Cristiano Ronaldo|DIFICULDADE: dificil.
+ID D18|QUESTÃO: Em média, quantos litros de sangue tem uma pessoa?|RESPOSTA CERTA: Entre 4 a 6 litros|RESPOSTAS ERRADAS: Tenho a certeza que são 7, Entre 2 a 3, Mais de 10|DIFICULDADE: dificil.
+ID D19|QUESTÃO: Qual é o nome da banda com os seguintes membros: John Deacon, Brian May, Freddie Mercury, Roger Taylor?|RESPOSTA CERTA: Queen|RESPOSTAS ERRADAS: Beatles, Red Hot Chili Peppers, Oasis|DIFICULDADE: dificil.
+ID D20|QUESTÃO: Em que país fica situado o Taj Mahal?|RESPOSTA CERTA: Índia|RESPOSTAS ERRADAS: Alemanha, China, Filipinas|DIFICULDADE: dificil.
+ID D21|QUESTÃO: A Guerra Colonial Portuguesa (Guerra do Ultramar), começou em que ano?|RESPOSTA CERTA: 1961|RESPOSTAS ERRADAS: 1965, 1945, 1899|DIFICULDADE: dificil.
+ID D22|QUESTÃO: Quem desenhou o elevador de Santa Justa, em Lisboa?|RESPOSTA CERTA: Mesnier de Ponsard|RESPOSTAS ERRADAS: Gustave Eiffel, Frank Loyd Wright, Charles Rennie Mackintosh|DIFICULDADE: dificil.
+ID D23|QUESTÃO: De quem é a famosa frase "Penso, logo existo"?|RESPOSTA CERTA: Descartes|RESPOSTAS ERRADAS: Platão, Lionel Messi, Albert Einstien|DIFICULDADE: dificil.
+ID D24|QUESTÃO: Qual o livro mais vendido do mundo a seguir à Bíblia?|RESPOSTA CERTA: Dom Quixote|RESPOSTAS ERRADAS: O Senhor dos Anéis, O Principezinho, Um Conto de Duas Cidades|DIFICULDADE: dificil.
+ID D25|QUESTÃO: Em que país fica situado o Stonehenge?|RESPOSTA CERTA: Reino Unido|RESPOSTAS ERRADAS: Estados Unidos, Irlanda, Dinamarca|DIFICULDADE: dificil.
+ID D26|QUESTÃO: Em que país fica situado o Coliseu?|RESPOSTA CERTA: Itália|RESPOSTAS ERRADAS: Espanha, Coreia do Norte, Portugal|DIFICULDADE: dificil.
+ID D27|QUESTÃO: Na capela-mor da Igreja da Lapa, no Porto, guarda-se o coração de que Rei?|RESPOSTA CERTA: D.Pedro IV|RESPOSTAS ERRADAS: D.Afonso Henriques, D.Manuel I, D.João I|DIFICULDADE: dificil.
+ID D28|QUESTÃO: Em 1943, foi publicado um livro para crianças que se tornou muito famoso. Qual?|RESPOSTA CERTA: O Principezinho|RESPOSTAS ERRADAS: As Aventuras de Tom Sawyer, Alice no País das Maravilhas, Robinson Crusoe|DIFICULDADE: dificil.
+ID D29|QUESTÃO: Quantos elementos químicos possui a tabela periódica?|RESPOSTA CERTA: 118|RESPOSTAS ERRADAS: 125, 90, 10|DIFICULDADE: dificil.
+ID D30|QUESTÃO: Quais são os países com maior e menor expetativa de vida, respetivamente?|RESPOSTA CERTA: Japão e Serra Leoa|RESPOSTAS ERRADAS: Itália e Chade, Brasil e Congo, Portugal e Angola|DIFICULDADE: dificil.
+ID D31|QUESTÃO: Em que ano terminou a Primeira Guerra Mundial?|RESPOSTA CERTA: 1918|RESPOSTAS ERRADAS: 1921, 1934, 1908|DIFICULDADE: dificil.
+ID D32|QUESTÃO: Em que século nasceu Shakespeare?|RESPOSTA CERTA: XVI|RESPOSTAS ERRADAS: XV, XII, XX|DIFICULDADE: dificil.
+ID D33|QUESTÃO: Qual destas obras não foi escrita por Alice Vieira?|RESPOSTA CERTA: O Lobo Prateado|RESPOSTAS ERRADAS: o Livro com Cheiro a Canela, Úrsula a Maior, A Adivinha do Rei|DIFICULDADE: dificil.
+ID D34|QUESTÃO: Na foto da capa do álbum "Abbey Road", os integrantes dos Beatles estão:|RESPOSTA CERTA: A atravessar a rua|RESPOSTAS ERRADAS: A saltar à corda, A abrir uma porta, A fazer o pino|DIFICULDADE: dificil.
+ID D35|QUESTÃO: Quem pintou Guernica?|RESPOSTA CERTA: Pablo Picasso|RESPOSTAS ERRADAS: Paul Cézane, Salvador Dalí, José Sócrates|DIFICULDADE: dificil.
+ID D36|QUESTÃO: Quanto tempo é que a luz do sol demora a chegar à terra?|RESPOSTA CERTA: 8minutos|RESPOSTAS ERRADAS: 8segundos, 12minutos, 12horas|DIFICULDADE: dificil.
+ID D37|QUESTÃO: Em que ano terminou a Segunda Guerra Mundial?|RESPOSTA CERTA: 1945|RESPOSTAS ERRADAS: 1938, 1942, 1961|DIFICULDADE: dificil.
+ID D38|QUESTÃO: Que matemático e geógrafo grego calculou o perímetro da Terra em 240 a.C.?|RESPOSTA CERTA: Eratóstenes|RESPOSTAS ERRADAS: Aristóteles, Sócrates, Descartes|DIFICULDADE: dificil.
+ID D39|QUESTÃO: Em que século nasceu Charles Darwin, autor da "Origem das espécies"?|RESPOSTA CERTA: XIX|RESPOSTAS ERRADAS: XX, XIV, XV|DIFICULDADE: dificil.
+ID D40|QUESTÃO: Em que ano foi criada a ONU (Organização das Nações Unidas)?|RESPOSTA CERTA: 1945|RESPOSTAS ERRADAS: 1935, 1939, 1991|DIFICULDADE: dificil.
+ID D41|QUESTÃO: Qual é a nacionalidade de Che Guevara?|RESPOSTA CERTA: Argentina|RESPOSTAS ERRADAS: Cubana, Espanhola, Francesa|DIFICULDADE: dificil.
+ID D42|QUESTÃO: Como se chamou o Sporting Club de Portugal entre 1904 e 1906?|RESPOSTA CERTA: Campo Grande Football Club|RESPOSTAS ERRADAS: Leões da Estrela, Não teve nome, Sporting Clube de Portugal|DIFICULDADE: dificil.
+ID D43|QUESTÃO: Em Portugal, a que cidadãos foi retirado o direito de voto em 1913?|RESPOSTA CERTA: Analfabetos|RESPOSTAS ERRADAS: Mulheres, Emigrantes, Idosos|DIFICULDADE: dificil.
+ID D44|QUESTÃO: Que parque natural na região de Bragança foi criado em 1979?|RESPOSTA CERTA: Montesinho|RESPOSTAS ERRADAS: Peneda-Gerês, Arrábida, Alto Douro|DIFICULDADE: dificil.
+ID D45|QUESTÃO: O "Homem de Vitrúvio" é um famoso desenho de?|RESPOSTA CERTA: Leonardo Da Vinci|RESPOSTAS ERRADAS: Miguel Ângelo, Caravaggio, Rembrandt|DIFICULDADE: dificil.
+ID D46|QUESTÃO: Miles Davis, estrela do Jazz, era mais conhecido por tocar que intrumento musical?|RESPOSTA CERTA: Trompete|RESPOSTAS ERRADAS: Saxofone, Piano, Guitarra|DIFICULDADE: dificil.
+ID D47|QUESTÃO: As Ilhas Cook, ficam em que oceano?|RESPOSTA CERTA: Pacífico|RESPOSTAS ERRADAS: Índico, Atlântico, Ártico|DIFICULDADE: dificil.
+ID D48|QUESTÃO: Em que localidade portuguesa nasceu a poetisa Florbela Espanca?|RESPOSTA CERTA: Vila Viçosa|RESPOSTAS ERRADAS: Vila Velha de Rodão, Vila Verde, Vila Real de Santo António|DIFICULDADE: dificil.
+ID D49|QUESTÃO: Qual a altura da rede de vólei nos jogos masculinos e femininos?|RESPOSTA CERTA: 2.43m e 2.24m|RESPOSTAS ERRADAS: 2.4m para ambos, 2.45m e 2.15m, 2.5m e 2m|DIFICULDADE: dificil.
+ID D50|QUESTÃO: Qual é a montanha mais alta do Brasil?|RESPOSTA CERTA: Pico da Neblina|RESPOSTAS ERRADAS: Pico Paraná, Pico da Bandeira, Monte Roraima|DIFICULDADE: dificil.
