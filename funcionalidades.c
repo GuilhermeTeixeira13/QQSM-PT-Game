@@ -638,16 +638,16 @@ void Randoms(int max, int min, int *resultado, int n)
 /*   ↓  Junta os elementos dos arrays f, m e d num array final  ↓   */
 void juntaArrays(int *f, int *m, int *d, int *final)
 {
-    int tamanhoFinal = 9, fa=0, me=0, di=0;
+    int tamanhoFinal = 12, fa=0, me=0, di=0;
 
     for(int i=0; i<tamanhoFinal; i++)
     {
-        if(i>=0 && i<3)
+        if(i>=0 && i<4)
         {
             final[i] = f[fa];
             fa++;
         }
-        else if(i>=3 && i<6)
+        else if(i>=4 && i<8)
         {
             final[i] = m[me];
             me++;
