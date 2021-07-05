@@ -293,6 +293,8 @@ int main()
                     printf("➙  SALDO ATUAL: %d EUROS.\n", quantia-valorPorCerta);
                     printf("➙  SE ACERTAR FICARÁ COM: %d euros\n", quantia);
                     printf("➙  SE ERRAR/DESISTIR FICARÁ COM: %d euros\n\n", garantido);
+                    printf("* AJUDAS DISPONÍVEIS *\n");
+                    printf(" ➙ TROCA DE PERGUNTA: %d\n\n", trocaDisponivel);
 
                     /*   ↓  TRANSFORMAÇÃO PARA MAiÚSCULA (ESTÉTiCA)  ↓   */
                     if(strcmp(p[numPosPerguntaTXT].dificuldade, "facil") == 0)
@@ -392,6 +394,11 @@ int main()
 
                         printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                         printf("\n* AJUDA - TROCA DE PERGUNTA *\n\n");
+                        printf("➙  SALDO ATUAL: %d EUROS.\n", quantia-valorPorCerta);
+                        printf("➙  SE ACERTAR FICARÁ COM: %d euros\n", quantia);
+                        printf("➙  SE ERRAR/DESISTIR FICARÁ COM: %d euros\n\n", garantido);
+                        printf("* AJUDAS DISPONÍVEIS *\n");
+                        printf(" ➙ TROCA DE PERGUNTA: %d\n\n", trocaDisponivel);
                         printf("• PERGUNTA %d (%s): %s\n", numPergunta, dif, p[numPosPerguntaTXT].questao); 
                         
                         Randoms(3, -1, respAJUDA, 4);
