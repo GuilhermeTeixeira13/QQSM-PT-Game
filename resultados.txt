@@ -1,0 +1,3 @@
+Nome: gui
+Quantia: 0
+
