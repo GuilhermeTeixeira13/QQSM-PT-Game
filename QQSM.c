@@ -189,7 +189,7 @@ int main()
         }
 
 
-        /*   ↓  iNiCiAR CONCURSO  ↓   */
+        /*   ↓  INICIAR CONCURSO  ↓   */
         if(gerirOuiniciar == 2)
         {
             i=0, desistiu = 0, numResposta=0, quantia = 0, facilCont=0, medioCont=0, dificilCont=0, suficientes = 0, trocaDisponivel = 1;
@@ -233,25 +233,28 @@ int main()
                 suficientes = 1;
 
                 /* Sorteia as linhas do db.txt (dentro das perguntas possíveis existentes), q correspondem às perguntas que farão parte do concurso */
+                /* 3 fáceis + 1 fácil de ajuda //  3 médias + 1 média de ajuda // 3 difícil + 1 difícil de ajuda */
+
                 Randoms(facilCont, 1, f, 4); 
                 Randoms(facilCont+medioCont, facilCont+1, m, 4); 
                 Randoms(facilCont+medioCont+dificilCont, facilCont+medioCont+1, d, 4);  
-                juntaArrays(f, m, d, LinhasPerguntas); // Junta todas as linhas das perguntas no array LinhasPerguntas
+                juntaArrays(f, m, d, LinhasPerguntas); // Junta todas as linhas das perguntas no array LinhasPerguntas --> Exemplo: 4 36 17 26 // 56 93 68 71 // 111 102 143 144 
 
                 //Tirar comentário se se quiser ver quais foram as linhas referentes às perguntas escolhidas
-                printf("As perguntas (db.txt) que foram 'sorteadas' foram as referentes às seguintes linhas: ");
+                /*printf("As perguntas (db.txt) que foram 'sorteadas' foram as referentes às seguintes linhas: ");
                 for(int p=0; p<12; p++)
-                    printf("%d ", LinhasPerguntas[p]);
+                    printf("%d ", LinhasPerguntas[p]);*/
 
                 printf("\n\n");   
                 linha();
+
                 i=0;
-                while(i<11 && desistiu != 1 && numResposta == 0) // Executa o loop enquanto o número de perguntas for menor que nove e o jogador não tiver desistido e a resposta estiver correta, 
+                while(i<11 && desistiu != 1 && numResposta == 0) // Executa o loop enquanto o número de perguntas for menor que nove (casa 11) e o jogador não tiver desistido e a resposta estiver correta, 
                 {   
-                    numPosPerguntaTXT = LinhasPerguntas[i]-1; // A posição da pergunta é igual ao número da linha - 1 
+                    numPosPerguntaTXT = LinhasPerguntas[i]-1; // A posição da pergunta no array de pergundas é igual ao número da linha - 1 
                     ch = 65;
 
-                    /*   ↓  Consoante o patamar em que se está, são definidos diferentes valores para o dinheiro garantido quando o jogador perde e para o valor ganho por resposta certa  ↓   */
+                     /*   ↓  São feitos alguns ajustes para o número da pergunta aparecer certo  ↓   */
                     if(i >= 0 && i<= 2)
                         numPergunta = i+1;
                     else if(i >= 4 && i<= 6)
@@ -259,6 +262,7 @@ int main()
                     else
                         numPergunta = i-1;
 
+                    /*   ↓  Consoante o patamar em que se está, são definidos diferentes valores para o dinheiro garantido quando o jogador perde e para o valor ganho por resposta certa  ↓   */
                     if(numResposta == 0) // O 0 está associado com a resposta certa
                     {
                         if(numPergunta == 1)
@@ -318,7 +322,7 @@ int main()
                         /* Tirar comentário se pretender ver a ordem sorteada para as perguntas (0 = resposta certa)
                         printf("%d ", resp[k]);*/
                         if(resp[k] == 0)
-                            printf("%s", p[numPosPerguntaTXT].respostaCerta); // na letra que estiver associada com o número 0, é imprimida a respost certa
+                            printf("%s", p[numPosPerguntaTXT].respostaCerta); // na letra que estiver associada com o número 0, é afixada a resposta certa
                         else if(resp[k] == 1)
                             printf("%s", p[numPosPerguntaTXT].respostaErrada1); // nas restantes letras que estievrem associadas com os restantes números (1, 2, 3), são imprimidas respostas erradas
                         else if(resp[k] == 2)                               
@@ -371,10 +375,13 @@ int main()
                         numResposta = resp[2];
                     else if(strcmp(respostaJogador, "d") == 0)
                         numResposta = resp[3];
-                    else if(strcmp(respostaJogador, "1") == 0)
+                    else if(strcmp(respostaJogador, "1") == 0) // TROCA DE PERGUNTA
                     {
-                        trocaDisponivel = 0;
-                        if(i >= 0 && i<= 2)
+                        // NOTA: A explicação para o que está dentro deste else if é semelhante ao que foi feito acima, portanto, só que difere bastante será comentado
+
+                        trocaDisponivel = 0; // A partir do momento que esta ajuda (TROCA) é usada não se pode voltar a usar a mesma
+
+                        if(i >= 0 && i<= 2) // Se estivermos em alguma pergunda fácil, ao pedir ajuda, vamos buscar a pergunta que está na posição 3 do array
                             posAjuda = 3;
                         else if(i >= 4 && i<= 6)
                             posAjuda = 7;
@@ -385,20 +392,20 @@ int main()
 
                         printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                         printf("\n* AJUDA - TROCA DE PERGUNTA *\n\n");
-                        printf("• PERGUNTA %d (%s): %s\n", numPergunta, dif, p[numPosPerguntaTXT].questao); // Faz a pergunta
+                        printf("• PERGUNTA %d (%s): %s\n", numPergunta, dif, p[numPosPerguntaTXT].questao); 
                         
-                        Randoms(3, -1, respAJUDA, 4); // sorteia 4 números de 0 a 3 e coloca no array respAJUDA
+                        Randoms(3, -1, respAJUDA, 4);
 
                         ch = 65;
                         for(int k=0; k<4; k++)
                         {
                             printf("%c. ", ch);
                             /* Tirar comentário se pretender ver a ordem sorteada para as perguntas (0 = resposta certa)
-                            printf("%d ", resp[k]);*/
+                            printf("%d ", respAJUDA[k]);*/
                             if(respAJUDA[k] == 0)
-                                printf("%s", p[numPosPerguntaTXT].respostaCerta); // na letra que estiver associada com o número 0, é imprimida a respost certa
+                                printf("%s", p[numPosPerguntaTXT].respostaCerta); 
                             else if(respAJUDA[k] == 1)
-                                printf("%s", p[numPosPerguntaTXT].respostaErrada1); // nas restantes letras que estievrem associadas com os restantes números (1, 2, 3), são imprimidas respostas erradas
+                                printf("%s", p[numPosPerguntaTXT].respostaErrada1); 
                             else if(respAJUDA[k] == 2)                               
                                 printf("%s", p[numPosPerguntaTXT].respostaErrada2);
                             else if(respAJUDA[k] == 3)
@@ -439,6 +446,7 @@ int main()
                     printf("\n");
                     linha();
                     
+                    // Saltam-se as perguntas que estão "guardadas" para a ajuda da TROCA DE PERGUNTA, a não ser que o user decida usar essa mesma ajuda
                     if (i == 2)
                         i = 4;
                     else if (i == 6)
@@ -449,7 +457,7 @@ int main()
             }
             printf("\n");
 
-            /*   ↓  imprime mensangens consoante rumo do jogo  ↓   */
+            /*   ↓  Imprime mensangens consoante rumo do jogo  ↓   */
             if(desistiu == 1)
             {
                 quantia = garantido;
