@@ -6,8 +6,8 @@
 
 int main()
 {
-    int formatoLeitura, gerirOuiniciar, gerirConcurso, escolha, quantia=0, d[3], m[3], f[3], LinhasPerguntas[9], i=0, suficientes=1, tamanhoNomeJogador;
-    int numPosPerguntaTXT, resp[4], numResposta, desistiu = 0, tam, garantido=0, valorPorCerta = 0, facilCont=0, medioCont=0, dificilCont=0, numPergunta;
+    int formatoLeitura, gerirOuiniciar, gerirConcurso, escolha, quantia=0, d[4], m[4], f[4], LinhasPerguntas[12], i=0, suficientes=1, tamanhoNomeJogador, posAjuda, trocaDisponivel = 1, opInvalida=0;
+    int numPosPerguntaTXT, resp[4], respAJUDA[4],numResposta, desistiu = 0, tam, garantido=0, valorPorCerta = 0, facilCont=0, medioCont=0, dificilCont=0, numPergunta;
     char palavraProcurada[257], nomeJogador[100], dif[20], respostaJogador[10], resposta[10];
     char *pos, ch;
 
@@ -192,7 +192,7 @@ int main()
         /*   ↓  iNiCiAR CONCURSO  ↓   */
         if(gerirOuiniciar == 2)
         {
-            i=0, desistiu = 0, numResposta=0, quantia = 0, facilCont=0, medioCont=0, dificilCont=0, suficientes = 0;
+            i=0, desistiu = 0, numResposta=0, quantia = 0, facilCont=0, medioCont=0, dificilCont=0, suficientes = 0, trocaDisponivel = 1;
             
             leTXTJOGADOR(j, "resultados.txt"); // Lê o que está no ficheiro resultados.txt (histórico de jogadores e quantias ganhas)
             limpaInput();
@@ -228,31 +228,37 @@ int main()
                     dificilCont++;
             }
 
-            if(facilCont > 2  && medioCont > 2 && dificilCont > 2) // Só deixa começar o jogo se houver mais de 2 perguntas de cada categoria
+            if(facilCont > 3  && medioCont > 3 && dificilCont > 3) // Só deixa começar o jogo se houver mais de 2 perguntas de cada categoria
             {    
                 suficientes = 1;
 
                 /* Sorteia as linhas do db.txt (dentro das perguntas possíveis existentes), q correspondem às perguntas que farão parte do concurso */
-                Randoms(facilCont, 1, f, 3); 
-                Randoms(facilCont+medioCont, facilCont+1, m, 3); 
-                Randoms(facilCont+medioCont+dificilCont, facilCont+medioCont+1, d, 3);  
+                Randoms(facilCont, 1, f, 4); 
+                Randoms(facilCont+medioCont, facilCont+1, m, 4); 
+                Randoms(facilCont+medioCont+dificilCont, facilCont+medioCont+1, d, 4);  
                 juntaArrays(f, m, d, LinhasPerguntas); // Junta todas as linhas das perguntas no array LinhasPerguntas
 
-                /*Tirar comentário se se quiser ver quais foram as linhas referentes às perguntas escolhidas
+                //Tirar comentário se se quiser ver quais foram as linhas referentes às perguntas escolhidas
                 printf("As perguntas (db.txt) que foram 'sorteadas' foram as referentes às seguintes linhas: ");
-                for(int p=0; p<9; p++)
-                    printf("%d ", LinhasPerguntas[p]);*/
+                for(int p=0; p<12; p++)
+                    printf("%d ", LinhasPerguntas[p]);
 
                 printf("\n\n");   
                 linha();
                 i=0;
-                while(i<9 && desistiu != 1 && numResposta == 0) // Executa o loop enquanto o número de perguntas for menor que nove e o jogador não tiver desistido e a resposta estiver correta, 
-                {                                                                               
+                while(i<11 && desistiu != 1 && numResposta == 0) // Executa o loop enquanto o número de perguntas for menor que nove e o jogador não tiver desistido e a resposta estiver correta, 
+                {   
                     numPosPerguntaTXT = LinhasPerguntas[i]-1; // A posição da pergunta é igual ao número da linha - 1 
                     ch = 65;
 
                     /*   ↓  Consoante o patamar em que se está, são definidos diferentes valores para o dinheiro garantido quando o jogador perde e para o valor ganho por resposta certa  ↓   */
-                    numPergunta = i+1;
+                    if(i >= 0 && i<= 2)
+                        numPergunta = i+1;
+                    else if(i >= 4 && i<= 6)
+                        numPergunta = i;
+                    else
+                        numPergunta = i-1;
+
                     if(numResposta == 0) // O 0 está associado com a resposta certa
                     {
                         if(numPergunta == 1)
@@ -322,7 +328,10 @@ int main()
                         printf("\n");
                         ch += 1;
                     }
-                    printf("X. (CASO QUEIRA DESISTIR)\n\n");
+                    printf("X. (CASO QUEIRA DESISTIR)\n");
+                    if(trocaDisponivel == 1)
+                        printf("1. (CASO QUEIRA TROCAR DE PERGUNTA)\n\n");
+
                     /*   ↓  Faz a validação da opção escolhida pelo user, aceitanto apenas A, B, C, D ou X (Case insensitive para facilitar o user) ↓   */
                     do
                     {
@@ -334,9 +343,23 @@ int main()
                         minuscula(resposta, respostaJogador);
                         if (tam == 0)
                             printf(" ✘ Opção vazia!!\n");
-                        if(strcmp(respostaJogador, "a") != 0 && strcmp(respostaJogador, "b") != 0 && strcmp(respostaJogador, "c") != 0 && strcmp(respostaJogador, "d") != 0 && strcmp(respostaJogador, "x") != 0)
-                            printf(" ✘ Opção inválida!!\n");
-                    } while ((strcmp(respostaJogador, "a") != 0 && strcmp(respostaJogador, "b") != 0 && strcmp(respostaJogador, "c") != 0 && strcmp(respostaJogador, "d") != 0 && strcmp(respostaJogador, "x") != 0) || tam == 0);
+                        if(trocaDisponivel == 1)
+                        {
+                            if(strcmp(respostaJogador, "a") != 0 && strcmp(respostaJogador, "b") != 0 && strcmp(respostaJogador, "c") != 0 && strcmp(respostaJogador, "d") != 0 && strcmp(respostaJogador, "x") != 0 && strcmp(respostaJogador, "1") != 0) 
+                            {    
+                                opInvalida = 1;
+                                printf(" ✘ Opção inválida!!\n");
+                            }
+                        }
+                        else
+                        {
+                            if(strcmp(respostaJogador, "a") != 0 && strcmp(respostaJogador, "b") != 0 && strcmp(respostaJogador, "c") != 0 && strcmp(respostaJogador, "d") != 0 && strcmp(respostaJogador, "x") != 0) 
+                            {    
+                                opInvalida = 1;
+                                printf(" ✘ Opção inválida!!\n");
+                            }
+                        }
+                    } while (opInvalida == 1);
 
                     /*   ↓  VERiFiCA-SE QUAL É O NÚMERO ASSOCiADO À LETRA RESPONDiDA E, CONSEQUENTEMENTE SE É OU NÃO A RESPOSTA CERTA  ↓   */
                     // Se numResposta = 0, então o user deu a resposta certa!
@@ -348,13 +371,80 @@ int main()
                         numResposta = resp[2];
                     else if(strcmp(respostaJogador, "d") == 0)
                         numResposta = resp[3];
+                    else if(strcmp(respostaJogador, "1") == 0)
+                    {
+                        trocaDisponivel = 0;
+                        if(i >= 0 && i<= 2)
+                            posAjuda = 3;
+                        else if(i >= 4 && i<= 6)
+                            posAjuda = 7;
+                        else
+                            posAjuda = 11;
+
+                        numPosPerguntaTXT = LinhasPerguntas[posAjuda] - 1;
+
+                        printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+                        printf("\n* AJUDA - TROCA DE PERGUNTA *\n\n");
+                        printf("• PERGUNTA %d (%s): %s\n", numPergunta, dif, p[numPosPerguntaTXT].questao); // Faz a pergunta
+                        
+                        Randoms(3, -1, respAJUDA, 4); // sorteia 4 números de 0 a 3 e coloca no array respAJUDA
+
+                        ch = 65;
+                        for(int k=0; k<4; k++)
+                        {
+                            printf("%c. ", ch);
+                            /* Tirar comentário se pretender ver a ordem sorteada para as perguntas (0 = resposta certa)
+                            printf("%d ", resp[k]);*/
+                            if(respAJUDA[k] == 0)
+                                printf("%s", p[numPosPerguntaTXT].respostaCerta); // na letra que estiver associada com o número 0, é imprimida a respost certa
+                            else if(respAJUDA[k] == 1)
+                                printf("%s", p[numPosPerguntaTXT].respostaErrada1); // nas restantes letras que estievrem associadas com os restantes números (1, 2, 3), são imprimidas respostas erradas
+                            else if(respAJUDA[k] == 2)                               
+                                printf("%s", p[numPosPerguntaTXT].respostaErrada2);
+                            else if(respAJUDA[k] == 3)
+                                printf("%s", p[numPosPerguntaTXT].respostaErrada3);
+                            printf("\n");
+                            ch += 1;
+                        }
+                        printf("X. (CASO QUEIRA DESISTIR)\n\n");
+
+                        do
+                        {
+                            printf("↪ OPÇÃO: ");
+                            fgets(resposta, 257, stdin);
+                            pos = strchr(resposta, '\n');
+                            *pos = '\0';
+                            tam = strlen(resposta);
+                            minuscula(resposta, respostaJogador);
+                            if (tam == 0)
+                                printf(" ✘ Opção vazia!!\n");
+                            if(strcmp(respostaJogador, "a") != 0 && strcmp(respostaJogador, "b") != 0 && strcmp(respostaJogador, "c") != 0 && strcmp(respostaJogador, "d") != 0 && strcmp(respostaJogador, "x") != 0) 
+                                printf(" ✘ Opção inválida!!\n");
+                        } while ((strcmp(respostaJogador, "a") != 0 && strcmp(respostaJogador, "b") != 0 && strcmp(respostaJogador, "c") != 0 && strcmp(respostaJogador, "d") != 0 && strcmp(respostaJogador, "x") != 0) || tam == 0);
+
+                        if(strcmp(respostaJogador, "a") == 0)
+                            numResposta = respAJUDA[0]; 
+                        else if(strcmp(respostaJogador, "b") == 0)
+                            numResposta = respAJUDA[1];
+                        else if(strcmp(respostaJogador, "c") == 0)
+                            numResposta = respAJUDA[2];
+                        else if(strcmp(respostaJogador, "d") == 0)
+                            numResposta = respAJUDA[3];
+                        else
+                            desistiu = 1;
+                    }
                     else
                         desistiu = 1;
 
                     printf("\n");
                     linha();
-                    //sleep(1.1);
-                    i++;
+                    
+                    if (i == 2)
+                        i = 4;
+                    else if (i == 6)
+                        i = 8;
+                    else
+                        i++;
                 }
             }
             printf("\n");
@@ -375,7 +465,7 @@ int main()
             else if(suficientes == 0)
             {
                 linha();
-                printf("\n➤  NÃO HÁ PERGUNTAS SUFICIENTES PARA INICIAR O CONCURSO (MÍNIMO é 3 DE CADA DIFICULDADE)!\n");
+                printf("\n➤  NÃO HÁ PERGUNTAS SUFICIENTES PARA INICIAR O CONCURSO (MÍNIMO é 4 DE CADA DIFICULDADE)!\n");
             }
             else
                 printf(" ♛  PARABÉNS, %s! GANHOU O PRÉMIO MÁXIMO! RECEBE: 20.000 EUROS !!! ♛\n", nomeJogador);
