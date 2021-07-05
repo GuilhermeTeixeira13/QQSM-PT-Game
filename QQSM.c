@@ -301,9 +301,9 @@ int main()
                     /* A cada resposta possível (A,B,C,D) é atribuido cada número do array resp (constituido por 0, 1, 2, 3) */
                     /*
                         A - 1 (errada1)
-                        B - 3 (errada2)
+                        B - 2 (errada2)
                         C - 0 (certa)
-                        D - 4 (errada3)
+                        D - 3 (errada3)
                     
                     */
                     for(int k=0; k<4; k++)
