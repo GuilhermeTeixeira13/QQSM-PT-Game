@@ -119,3 +119,5 @@ void juntaArrays(int *f, int *m, int *d, int *final);
 void tabela();
 
 void infos();
+
+int estaNoArray(int num, int *array, int tam);

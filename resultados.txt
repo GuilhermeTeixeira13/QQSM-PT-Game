@@ -1,3 +1,27 @@
 Nome: gui
 Quantia: 0
 
+Nome: gui
+Quantia: 0
+
+Nome: gui
+Quantia: 0
+
+Nome: gui
+Quantia: 0
+
+Nome: gui
+Quantia: 0
+
+Nome: gui
+Quantia: 0
+
+Nome: Guilherme
+Quantia: 5000
+
+Nome: raq
+Quantia: 0
+
+Nome: gui
+Quantia: 0
+

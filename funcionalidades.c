@@ -660,6 +660,21 @@ void juntaArrays(int *f, int *m, int *d, int *final)
     }
 }
 
+int estaNoArray(int num, int *array, int tam)
+{
+    int k, presente = 0;
+
+    for(k=0; k<tam; k++)
+    {
+        if(num == array[k])
+        {
+            presente = 1;
+            break;
+        }
+    }
+    return presente;
+}
+
 void tabela()
 {
     printf("\n");
