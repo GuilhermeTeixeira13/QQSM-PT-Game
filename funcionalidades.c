@@ -660,6 +660,7 @@ void juntaArrays(int *f, int *m, int *d, int *final)
     }
 }
 
+/* Verifica se 'num' está presente no array de tamanho 'tam', caso sim devolve 1, caso contrário devolve 0 */
 int estaNoArray(int num, int *array, int tam)
 {
     int k, presente = 0;
